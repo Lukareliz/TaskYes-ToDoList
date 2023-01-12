@@ -16,6 +16,7 @@ button {
     background-color: #fdfdfd;
     color: #102f5e;
     border: 2px solid #102f5e;
+    border-radius: 15px;
     padding: .3rem .6rem;
     font-size:  1rem;
     cursor: pointer;
@@ -37,6 +38,7 @@ button:hover > i {
 button i {
     color: #102f5e;
     font-weight: bold;
+    padding: .1rem;
     pointer-events: none;
 }
 
@@ -46,6 +48,56 @@ input, select {
 
 .hide {
     display: none;
+}
+
+/*NAVBAR*/
+
+#bars-button {
+    margin: 0.1rem;
+}
+
+/*MENU*/
+
+.overlay {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color:#102f5e
+}
+
+.overlay #closeMenu-button{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+
 }
 
 /*TODO HEADER*/

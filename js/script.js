@@ -9,6 +9,15 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 let oldInputValue;
 
 //Fuções
+
+function openMenu(){
+    document.querySelector("#menu-container").style.width = '20%'
+}
+
+function closeMenu(){
+    document.querySelector("#menu-container").style.width = '0'
+}
+
 const saveTodo = (Text) => {
     const todo = document.createElement("div");
     todo.classList.add("todo");
