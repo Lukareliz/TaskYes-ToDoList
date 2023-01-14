@@ -5,6 +5,7 @@ const todoList = document.querySelector("#todo-list");
 const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
+const body = document.querySelector("body");
 
 let oldInputValue;
 
@@ -16,6 +17,10 @@ function openMenu(){
 
 function closeMenu(){
     document.querySelector("#menu-container").style.width = '0'
+}
+
+function changeBg(event){
+    body.style.background = event.target.value;
 }
 
 const saveTodo = (Text) => {
